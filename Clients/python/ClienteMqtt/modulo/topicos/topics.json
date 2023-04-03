@@ -1,0 +1,22 @@
+[
+    {
+        "topic": "B4:2E:99:CA:F9:24/boot_up",
+        "payload": ""
+    },
+    {
+        "topic": "B4:2E:99:CA:F9:24/on",
+        "payload": ""
+    },
+    {
+        "topic": "B4:2E:99:CA:F9:24/ram/total",
+        "payload": ""
+    },
+    {
+        "topic": "B4:2E:99:CA:F9:24/ram/used",
+        "payload": ""
+    },
+    {
+        "topic": "B4:2E:99:CA:F9:24/ram/free",
+        "payload": ""
+    }
+]
