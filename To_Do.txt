@@ -1,0 +1,19 @@
+Para llevar a cabo la tarea descrita, se pueden seguir los siguientes pasos:
+
+1. Configuración de la conexión MQTT: Se debe establecer la conexión MQTT entre la NodeMCU y la computadora. Para ello, se necesita instalar un servidor MQTT en la computadora y configurar el cliente MQTT en la NodeMCU para que se conecte al servidor.
+
+2. Envío de datos a tasa constante: En el caso 1, se debe enviar un dato a tasa constante (por ejemplo, cada 1 o 2 segundos) desde la NodeMCU al servidor MQTT. Para lograr esto, se puede programar un bucle que envíe el dato cada cierto intervalo de tiempo.
+
+3. Verificación de la integridad de los datos: Para verificar que no se pierdan datos en la transmisión, se puede enviar una secuencia de números consecutivos desde la NodeMCU al servidor MQTT, y luego verificar en la computadora que se reciban todos los números en orden.
+
+4. Interrupción manual del suministro: En el caso 2, se debe interrumpir manualmente el suministro de datos desde la NodeMCU al servidor MQTT para medir el tiempo de reconexión. Para lograr esto, se puede programar un botón en la interfaz web que simule la interrupción del suministro.
+
+5. Comprobación de la pérdida de datos: En el caso 2, se espera que se pierdan datos durante la interrupción del suministro. Para verificar que la pérdida de datos sea proporcional al tiempo de reconexión, se puede enviar una secuencia de números consecutivos desde la NodeMCU al servidor MQTT antes y después de la interrupción, y luego verificar en la computadora que se reciban todos los números en orden.
+
+6. Comunicación a tasa creciente: En el caso 3, se debe enviar datos a una tasa creciente (por ejemplo, duplicando la tasa de transferencia cada 5 segundos) desde la NodeMCU al servidor MQTT. Para lograr esto, se puede programar un bucle que envíe el dato cada vez con un intervalo de tiempo menor.
+
+7. Determinación del límite superior de velocidad: En el caso 3, se debe determinar el límite superior de velocidad de transmisión embebido-computadora. Para lograr esto, se puede monitorear el tiempo de recepción de los datos en la computadora y aumentar la tasa de transferencia hasta que se alcance un tiempo máximo de recepción o se detecte la pérdida de datos.
+
+8. Interfaz web: Se debe diseñar una interfaz web que muestre los resultados de los tres casos de prueba de manera clara y concisa. La interfaz web debe actualizarse automáticamente sin necesidad de recargar toda la página, y debe mostrar los datos transmitidos y recibidos, así como los tiempos de reconexión y recepción.
+
+En resumen, se debe programar la conexión MQTT, el envío de datos a tasa constante, la verificación de la integridad de los datos, la interrupción manual del suministro, la comprobación de la pérdida de datos, la comunicación a tasa creciente, la determinación del límite superior de velocidad y la interfaz web para mostrar los resultados.

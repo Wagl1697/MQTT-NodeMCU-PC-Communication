@@ -1,0 +1,9 @@
+La tarea consiste en: comunicar un embebido (una NodeMCU) con una computadora (notebook o PC) empleando el protocolo MQTT y evaluar los siguientes casos o escenarios.
+
+La tarea tiene 3 casos a analizar:
+Caso 1: Comunicación de un dato a tasa constante (ejemplo una vez cada 1 o 2 segundos).
+Caso 2: Misma comunicación que en caso 1 pero interrumpiendo manualmente el suministro al embebido para medir tiempo de reconexión embebido-computadora.
+Caso 3: Comunicación a tasa creciente (ejemplo, duplicar la tasa de transferencia cada 5 segundos) para determinar cuál es el límite superior de velocidad de transmisión embebido-computadora.
+Los tres caso anteriores deben realizarse cumpliendo dos condiciones:
+Comprobar que los datos transmitidos y los recibidos son correctos. Dicho de otro modo, se debe verificar que no se pierdan datos. Una forma de conseguir esto es enviar números consecutivos (1-2-3-...) de modo que se sepa que si una secuencia es, por ejemplo, 1-2-3-6-7-... entonces se determina la pérdida de datos en la transmisión dado que, como se indicó, el embebido debe transmitir a tasa constante. Por supuesto, sólo en el caso 2 se espera que se pierdan datos con lo cual, debería verificarse que la pérdida de datos sea proporcionar al tiempo requerido para la reconexión.
+Cada caso debe ser "mostrable" en poco tiempo con una interfaz web. Esto último implica que el servidor actualice el contenido de la página. Al respecto de esto último, debe evitarse recargar toda la página, en cambio, solamente debe actualizarse la parte de la página que cambia.
